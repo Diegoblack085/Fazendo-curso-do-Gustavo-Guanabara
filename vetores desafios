@@ -1,3 +1,4 @@
+DESAFIO 1
 Algoritmo "semnome"
 
 Var
@@ -21,3 +22,48 @@ Inicio
       fimpara
              fimpara
 Fimalgoritmo
+=========================================================================================
+DESAFIO 2
+INCOMPLETO
+
+Algoritmo "semnome"
+
+Var
+   gab : vetor[1..5]de caractere
+   nome : vetor [1..4]de caractere
+   resp : vetor [1..5]de caractere
+   m : vetor [1..5]de real
+   PONTOS : vetor [1..5]de inteiro
+   c,J,ACERTOS : inteiro
+   ALAC:vetor [1..5]de inteiro
+   AL: vetor[1..5]de caractere
+   MT:  VETOR [1..5]DE REAL
+Inicio
+escreval("ESCREVA O GABARITO: ")
+      para c <- 1 ate 5 faca
+      LEIA(GAB[C])
+      fimpara
+      LIMPATELA
+        PARA C <- 1 ATE 4 FACA
+         ESCREVAL("NOME ALUNO: ")
+         LEIA(NOME[C])
+         PARA J <- 1 ATE 5 FACA
+         ESCREVAL("RESPOSTA: ")
+         LEIA(RESP[J])
+         SE (RESP[J] = GAB[J]) ENTAO
+         ACERTOS <- ACERTOS + 4
+         PONTOS[J] <- ACERTOS
+         ALAC[J] <- ACERTOS
+         AL[J] <- NOME[C]
+         m[J] <- ACERTOS/5
+         MT[j]<- M[J]/4
+         FIMSE
+         FIMPARA
+         LIMPATELA
+        FIMPARA
+
+PARA C <- 1 ATE 4 FACA
+     ESCREVAL(AL[C], ALAC[C], MT[j])
+FIMPARA
+Fimalgoritmo
+===========================================================
