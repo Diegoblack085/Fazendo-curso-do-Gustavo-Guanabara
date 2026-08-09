@@ -29,41 +29,42 @@ INCOMPLETO
 Algoritmo "semnome"
 
 Var
-   gab : vetor[1..5]de caractere
-   nome : vetor [1..4]de caractere
+   gab: vetor [1..5]de caractere
+   nome: vetor [1..5] de caractere
    resp : vetor [1..5]de caractere
-   m : vetor [1..5]de real
-   PONTOS : vetor [1..5]de inteiro
-   c,J,ACERTOS : inteiro
-   ALAC:vetor [1..5]de inteiro
-   AL: vetor[1..5]de caractere
-   MT:  VETOR [1..5]DE REAL
+   pontos : inteiro
+   m: vetor [1..5]de inteiro
+   PONTAL : VETOR [1..5] DE INTEIRO
+   NOMEAL : VETOR [1..5]DE CARACTERE
+   c:inteiro
 Inicio
-escreval("ESCREVA O GABARITO: ")
+escreval("Passo 1- Cadastro de Gabarito")
       para c <- 1 ate 5 faca
-      LEIA(GAB[C])
+      escreva("Questão ",c,": ")
+      leia(gab[c])
       fimpara
-      LIMPATELA
-        PARA C <- 1 ATE 4 FACA
-         ESCREVAL("NOME ALUNO: ")
-         LEIA(NOME[C])
-         PARA J <- 1 ATE 5 FACA
-         ESCREVAL("RESPOSTA: ")
-         LEIA(RESP[J])
-         SE (RESP[J] = GAB[J]) ENTAO
-         ACERTOS <- ACERTOS + 4
-         PONTOS[J] <- ACERTOS
-         ALAC[J] <- ACERTOS
-         AL[J] <- NOME[C]
-         m[J] <- ACERTOS/5
-         MT[j]<- M[J]/4
-         FIMSE
-         FIMPARA
-         LIMPATELA
-        FIMPARA
-
-PARA C <- 1 ATE 4 FACA
-     ESCREVAL(AL[C], ALAC[C], MT[j])
-FIMPARA
+             LIMPATELA
+       para c <- 1 ate 5 faca
+        escreval("============================")
+        escreval("ALUNO ",C,": ")
+        escreval("============================")
+        escreva("Nome: ")
+        LEIA(nome[c])
+         para c <- 1 ate 5 faca
+         escreval("Respostadas dadas: ")
+         escreva("questão" ,c,": ")
+         leia(resp[c])
+           se (resp[c] = gab[c])entao
+            pontOS <- pontos + 2
+           fimse
+          PONTAL[C] <- PONTOS
+          NOMEAL[C]  <- NOME[C]
+        fimpara
+        PONTAL[C] <- PONTOS
+        limpatela
+       fimpara
+     PARA C <- 1 ATE 5 FACA
+      ESCREVAL(NOMEAL[C], PONTAL[C])
+     FIMPARA
 Fimalgoritmo
 ===========================================================
