@@ -24,8 +24,6 @@ Inicio
 Fimalgoritmo
 =========================================================================================
 DESAFIO 2
-INCOMPLETO
-
 Algoritmo "semnome"
 
 Var
@@ -36,7 +34,7 @@ Var
    m: vetor [1..5]de inteiro
    PONTAL : VETOR [1..5] DE INTEIRO
    NOMEAL : VETOR [1..5]DE CARACTERE
-   c:inteiro
+   c,J:inteiro
 Inicio
 escreval("Passo 1- Cadastro de Gabarito")
       para c <- 1 ate 5 faca
@@ -45,26 +43,28 @@ escreval("Passo 1- Cadastro de Gabarito")
       fimpara
              LIMPATELA
        para c <- 1 ate 5 faca
+       pontos <- 0
         escreval("============================")
         escreval("ALUNO ",C,": ")
         escreval("============================")
         escreva("Nome: ")
         LEIA(nome[c])
-         para c <- 1 ate 5 faca
+         para J <- 1 ate 5 faca
          escreval("Respostadas dadas: ")
-         escreva("questão" ,c,": ")
-         leia(resp[c])
-           se (resp[c] = gab[c])entao
+         escreva("questão" ,J,": ")
+         leia(resp[J])
+           se (resp[J] = gab[J])entao
             pontOS <- pontos + 2
            fimse
-          PONTAL[C] <- PONTOS
-          NOMEAL[C]  <- NOME[C]
+                  PONTAL[C] <- PONTOS
+       NOMEAL[C]  <- NOME[C]
         fimpara
-        PONTAL[C] <- PONTOS
         limpatela
        fimpara
+     escreval("A nota final dos alunos foi: ")
+     escreval("===============================")
      PARA C <- 1 ATE 5 FACA
       ESCREVAL(NOMEAL[C], PONTAL[C])
      FIMPARA
-Fimalgoritmo
+fimalgoritmo
 ===========================================================
