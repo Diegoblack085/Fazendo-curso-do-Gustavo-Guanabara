@@ -68,3 +68,31 @@ escreval("Passo 1- Cadastro de Gabarito")
      FIMPARA
 fimalgoritmo
 =========================================================================================
+DESAFIO 3
+continuar
+
+Algoritmo "semnome"
+var
+   b: vetor [1..10]de  inteiro
+   c:inteiro
+   nada:vetor[1..10] de caractere
+   r:caractere
+Inicio
+r <- "S"
+      enquanto (r = "s") ou (r = "S")faca
+      para c <- 1 ate 10 faca
+       para c <- 1 ate 10 faca
+      escreva("[B",c,"]")
+      fimpara
+      escreval("")
+      escreva("Digite o assento que ira reservar: B")
+      se(r = b[c])entao
+      nada[c] <- "[---]"
+           b[c] <- nada[c]
+      escreva("[B",c,"]")
+      fimse
+              limpatela
+       fimpara
+              leia(r)
+      fimenquanto
+Fimalgoritmo
