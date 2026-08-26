@@ -1,0 +1,31 @@
+Aula 15 do curso
+ Desafio 1 
+
+Algoritmo "semnome"
+
+Var
+   c,r,L: inteiro
+   M: VETOR[1..3,1..3]DE inteiro
+Inicio
+r <- 1
+    enquanto (r = 1) ou (r = 2) ou (r =3) ou (r = 4)faca
+    PARA C <- 1 ATE 3 FACA
+         PARA L <- 1 ATE 3 FACA
+              ESCREVA("DIGITE UM VALOR [",C,L,"]: ")
+              LEIA(M[C,L])
+         FIMPARA
+    FIMPARA
+    
+      escreval("Quer continuar [s/n]? ")
+      leia(r)
+      
+    SE (R = 1)ENTAO
+      PARA C <-1 ATE 3 FACA
+         PARA L <- 1 ATE 3 FACA
+              ESCREVA(M[C,L])
+         FIMPARA
+                ESCREVAL()
+      FIMPARA
+    FIMSE
+    fimenquanto
+Fimalgoritmo
