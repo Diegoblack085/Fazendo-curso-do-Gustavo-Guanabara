@@ -68,15 +68,26 @@ Fimalgoritmo
 Desafio 2 
 
 Algoritmo "semnome"
-//
-//
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 26/08/2026
+
 Var
-   r1,r,x : caractere
-   c,l: inteiro
+   r1,x : caractere
+   c,l,r: inteiro
    m: vetor [1..3,1..3]de caractere
+procedimento i(i:caractere)
+inicio
+      escreva("Qual numero você irar colocar X: ")
+      leia(r)
+     se (r = 2)entao
+         m[1,r] <- X
+         limpatela
+      fimse
+            para c <- 1 ate 3 faca
+     para l <- 1 ate 3 faca
+     escreva("":2,m[c,l]:2)
+     fimpara
+     escreval()
+     fimpara
+fimprocedimento
 Inicio
 r1 <- "s"
 x <- "X"
@@ -92,24 +103,39 @@ m[3,3] <- "9"
 
 para c <- 1 ate 3 faca
      para l <- 1 ate 3 faca
-     escreva(m[c,l]:2)
+     escreva("":2,m[c,l]:2)
      fimpara
      escreval()
 fimpara
+escreval()
       enquanto (r1 = "s")faca
+      
       escreva("Qual numero você irar colocar X: ")
       leia(r)
       se (r = 1)entao
-         m[1,1] <- X
+         m[1,r] <- X
          limpatela
       fimse
       
       para c <- 1 ate 3 faca
      para l <- 1 ate 3 faca
-     escreva(m[c,l]:2)
+     escreva("":2,m[c,l]:2)
      fimpara
      escreval()
      fimpara
+     escreva("Qual numero você irar colocar X: ")
+          leia(r)
+     se (r = 2)entao
+         m[1,r] <- X
+         limpatela
+      fimse
+            para c <- 1 ate 3 faca
+     para l <- 1 ate 3 faca
+     escreva("":2,m[c,l]:2)
+     fimpara
+     escreval()
+     fimpara
+     escreval(procedimento(i))
             leia(r1)
       fimenquanto
 Fimalgoritmo
